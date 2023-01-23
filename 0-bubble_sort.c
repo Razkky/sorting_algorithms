@@ -8,7 +8,7 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, j, length = size;
-	int temp, count = 0;
+	int temp;
 	
 	if (array == NULL || size < 2)
 		return;
@@ -24,11 +24,8 @@ void bubble_sort(int *array, size_t size)
 				array[i + 1] = temp;
 				print_array(array, size);
 			}
-			count++;
 		}
 		length--;
-		count++;
 	}
-	printf("count %d\n", count);
 }
 
