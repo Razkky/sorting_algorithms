@@ -11,10 +11,10 @@ void insertion_sort_list(listint_t **list)
 	if (!list || !*list || !(*list)->next)
 		return;
 	tmp = (*list)->next;
-	while(tmp)
+	while (tmp)
 	{
 		loop = tmp;
-		while(loop != NULL && loop->prev != NULL)
+		while (loop != NULL && loop->prev != NULL)
 		{
 			if (loop->prev->n > loop->n)
 			{
@@ -31,8 +31,8 @@ void insertion_sort_list(listint_t **list)
 }
 /**
  * swap - swap nodes
- * @loop: first node
- * @tmp: second node
+ * @back: first node
+ * @ahead: second node
  */
 void swap(listint_t *back, listint_t *ahead)
 {
