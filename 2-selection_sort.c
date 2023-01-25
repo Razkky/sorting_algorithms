@@ -20,7 +20,7 @@ void selection_sort(int *array, size_t size)
 				index = i;
 			}
 		}
-		if (array[index] >= array[j - 1])
+		if (j != size - 1)
 			swap_array(&array[index], &array[j], array, size);
 	}
 }
